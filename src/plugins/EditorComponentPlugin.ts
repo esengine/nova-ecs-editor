@@ -63,7 +63,6 @@ export class EditorComponentRegistry {
         properties
       });
       
-      console.log(`Registered editor component: ${metadata.displayName} (${componentType.name})`);
     }
   }
 
@@ -292,7 +291,6 @@ export function discoverAndRegisterComponents(): void {
     registry.register(componentType);
   }
   
-  console.log(`Auto-discovered and registered ${componentTypes.length} components`);
 }
 
 /**
