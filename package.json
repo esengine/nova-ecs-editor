@@ -1,0 +1,67 @@
+{
+  "name": "@esengine/nova-ecs-editor",
+  "version": "1.0.0",
+  "description": "Editor extensions and plugins for NovaECS framework",
+  "keywords": [
+    "ecs",
+    "editor",
+    "plugin",
+    "typescript",
+    "nova-ecs",
+    "game-editor"
+  ],
+  "author": "esengine",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/esengine/nova-ecs-editor.git"
+  },
+  "homepage": "https://github.com/esengine/nova-ecs-editor#readme",
+  "bugs": {
+    "url": "https://github.com/esengine/nova-ecs-editor/issues"
+  },
+  "main": "dist/nova-ecs-editor.umd.js",
+  "module": "dist/nova-ecs-editor.esm.js",
+  "types": "dist/nova-ecs-editor.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c --bundleConfigAsCjs",
+    "dev": "rollup -c -w --bundleConfigAsCjs",
+    "docs": "typedoc",
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "eslint src --ext .ts --fix",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "test": "vitest",
+    "test:watch": "vitest --watch",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest --coverage",
+    "prepublishOnly": "npm run build",
+    "publish:patch": "npm version patch && npm publish --access public",
+    "publish:minor": "npm version minor && npm publish --access public",
+    "publish:major": "npm version major && npm publish --access public"
+  },
+  "peerDependencies": {
+    "@esengine/nova-ecs": "^1.0.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@typescript-eslint/eslint-plugin": "^7.18.0",
+    "@typescript-eslint/parser": "^7.18.0",
+    "@vitest/coverage-v8": "^3.2.4",
+    "@vitest/ui": "^3.2.4",
+    "eslint": "^8.57.1",
+    "prettier": "^3.0.0",
+    "rollup": "^4.9.0",
+    "rollup-plugin-dts": "^6.2.1",
+    "tslib": "^2.6.2",
+    "typedoc": "^0.28.7",
+    "typescript": "5.5.4",
+    "vite": "^7.0.5",
+    "vitest": "^3.2.4"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}

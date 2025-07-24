@@ -1,0 +1,35 @@
+{
+  "entryPoints": ["src/index.ts"],
+  "out": "docs",
+  "name": "Nova ECS Editor",
+  "theme": "default",
+  "readme": "README.md",
+  "excludePrivate": true,
+  "excludeProtected": false,
+  "excludeInternal": true,
+  "includeVersion": true,
+  "sort": ["source-order"],
+  "validation": {
+    "notExported": true,
+    "invalidLink": true,
+    "notDocumented": false
+  },
+  "categorizeByGroup": true,
+  "defaultCategory": "Other",
+  "categoryOrder": [
+    "Decorators",
+    "Plugins",
+    "Utilities",
+    "*",
+    "Other"
+  ],
+  "groupOrder": [
+    "Classes",
+    "Interfaces",
+    "Type Aliases",
+    "Functions",
+    "Variables"
+  ],
+  "searchInComments": true,
+  "searchInDocuments": true
+}
