@@ -9,9 +9,6 @@ dist/
 build/
 *.tsbuildinfo
 
-# TypeDoc documentation
-docs/
-
 # Coverage reports
 coverage/
 *.lcov
